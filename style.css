@@ -16,10 +16,10 @@ body{
     display: block;
     filter: blur(15px); /* efecto nublado*/
     -webkit-filter: blur(15px);
-    transition: all 2000ms;
+    transition: all 500ms;
 }
 
-.header:hover::after{ /* se hace nitido con cursor, luego vuelve a nublar*/
+.header:active::after{ /* se hace nitido con cursor, luego vuelve a nublar*/
     filter: blur(0px);
     -webkit-filter: blur(0px);
 }
@@ -85,7 +85,10 @@ body{
     grid-template-columns: 1fr 1fr;
 }
 
-a{  color: rgba(255, 255, 255, 0.5);   }
+a{  
+    color: rgba(255, 255, 255, 0.5);   
+    line-height: 1.8;
+}
 
 .bg-light{
     background-color: whitesmoke;
@@ -112,6 +115,16 @@ footer{
     padding-bottom: 2rem;
 }
 
+h2 i{
+    margin-right: 5px;
+}
+
+.justify{
+    text-align: justify;
+    margin: auto;
+    padding: 5px;
+}
+
 @media screen and (max-width: 375px){
     .grid-3, .grid-2{
         grid-template-columns: 1fr;
@@ -119,7 +132,7 @@ footer{
 
     .header::after{
 
-        height: 95vh;
+        height: 90vh;
     }
 
     .header-content{
@@ -135,5 +148,20 @@ footer{
 
         padding-top: 4rem;
         padding-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+
+    .pre{
+        font-size: 14px;
+    }
+
+    footer p{
+        font-size: 14px;
+    }
+
+    .justify{
+        padding: 0px;
     }
 }
