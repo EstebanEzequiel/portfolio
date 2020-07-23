@@ -7,7 +7,7 @@ body{
 
 .header::after{  /* ver seudo elemento*/
     content: '';
-    height: 85vh;
+    height: 90vh;
     width: 100%;
     background-image: url(https://wallpaperstock.net/wallpapers/thumbs1/22279wide.jpg);
     background-size: cover;
@@ -16,7 +16,7 @@ body{
     display: block;
     filter: blur(15px); /* efecto nublado*/
     -webkit-filter: blur(15px);
-    transition: all 500ms;
+    transition: all 1000ms;
 }
 
 .header:active::after{ /* se hace nitido con cursor, luego vuelve a nublar*/
@@ -64,13 +64,13 @@ body{
 }
 
 .diagonal{
-    -webkit-transform: skewY(5deg);
-    transform: skewY(5deg);
+    -webkit-transform: skewY(4deg);
+    transform: skewY(4deg);
 }
 
 .recto{
-    -webkit-transform: skewY(-5deg);
-    transform: skewY(-5deg);
+    -webkit-transform: skewY(-4deg);
+    transform: skewY(-4deg);
 }
 
 .grid-3 {
@@ -113,10 +113,6 @@ a{
 footer{
     padding-top: 2rem;
     padding-bottom: 2rem;
-}
-
-h2 i{
-    margin-right: 5px;
 }
 
 .justify{
