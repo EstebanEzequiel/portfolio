@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    background-color: rgb(0, 0, 0,0.9);
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header::after{  /* ver seudo elemento*/
+    content: '';
+    height: 85vh;
+    width: 100%;
+    background-image: url(https://wallpaperstock.net/wallpapers/thumbs1/22279wide.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(15px); /* efecto nublado*/
+    -webkit-filter: blur(15px);
+    transition: all 2000ms;
+}
+
+.header:hover::after{ /* se hace nitido con cursor, luego vuelve a nublar*/
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.header-content{
+    z-index: 1;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+}
+
+.title{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.text{
+    font-size: 16px;
+}
+
+.header-content .text {
+    line-height: 1.7;
+    width: 57%;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.text-center{
+    text-align: center;
+    margin: auto;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.diagonal{
+    -webkit-transform: skewY(5deg);
+    transform: skewY(5deg);
+}
+
+.recto{
+    -webkit-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 30px 30px 30px or repeat(3, 1fr)*/
+    grid-gap: 20px;
+}
+
+.grid-2{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+a{  color: rgba(255, 255, 255, 0.5);   }
+
+.bg-light{
+    background-color: whitesmoke;
+    color: #333;
+}
+
+.pre{
+    line-height: 2.5;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: capitalize;
+    text-align: justify;
+    padding: 10px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 375px){
+    .grid-3, .grid-2{
+        grid-template-columns: 1fr;
+    }
+
+    .header::after{
+
+        height: 95vh;
+    }
+
+    .header-content{
+        top: 20%;
+    }
+    
+    .header-content .text{
+        width: 80%;
+        font-size: 4vw;
+    }
+
+    .container{
+
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
