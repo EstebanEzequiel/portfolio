@@ -96,12 +96,14 @@ a{
 }
 
 .pre{
-    line-height: 2.5;
+    font-size: 22px;
+    line-height: 3;
     font-weight: bold;
-    color: rgba(0, 0, 0, 0.5);
-    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
     text-align: justify;
     padding: 10px;
+    font-family: 'Allerta', sans-serif;
 }
 
 .center {
@@ -120,6 +122,23 @@ footer{
     margin: auto;
     padding: 5px;
 }
+
+@media screen and (max-width: 1024px){
+
+    .pre{
+        font-size: 19px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .pre{
+        font-size: 14px;
+        padding: 0;
+    }
+}
+
 
 @media screen and (max-width: 375px){
     .grid-3, .grid-2{
@@ -145,12 +164,18 @@ footer{
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
+
+    .pre{
+        font-size: 14px;
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 320px){
 
     .pre{
-        font-size: 14px;
+        font-size: 12px;
+        padding: 0;
     }
 
     footer p{
