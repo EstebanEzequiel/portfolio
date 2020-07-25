@@ -7,7 +7,7 @@ body{
 
 .header::after{  /* ver seudo elemento*/
     content: '';
-    height: 90vh;
+    height: 91vh;
     width: 100%;
     background-image: url(https://wallpaperstock.net/wallpapers/thumbs1/22279wide.jpg);
     background-size: cover;
@@ -35,20 +35,30 @@ body{
 .title{
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin: 0;
 }
 
+.title1{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 6rem;
+    margin: 0;
+    font-size: 5rem;
+}
+
+
 .text{
     font-size: 16px;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
 }
 
 .header-content .text {
     line-height: 1.7;
-    width: 57%;
+    width: 68%;
     margin: auto;
     text-align: center;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .text-center{
@@ -57,21 +67,27 @@ body{
 }
 
 .container {
-    display: block;
     max-width: 80%;
     margin: auto;
     padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-bottom: 6rem;
+}
+
+.container1 {
+    max-width: 80%;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
 }
 
 .diagonal{
-    -webkit-transform: skewY(4deg);
-    transform: skewY(4deg);
+    -webkit-transform: skewY(5deg);
+    transform: skewY(5deg);
 }
 
 .recto{
-    -webkit-transform: skewY(-4deg);
-    transform: skewY(-4deg);
+    -webkit-transform: skewY(-5deg);
+    transform: skewY(-5deg);
 }
 
 .grid-3 {
@@ -90,26 +106,27 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 a{  
     color: rgba(255, 255, 255, 0.5);   
-    line-height: 1.8;
+    line-height: 1.9;
 }
 
 .bg-light{
-    background-color: whitesmoke;
+    background-color: white;
     color: #333;
 }
 
-.pre{
-    font-size: 18px;
-    line-height: 3;
+#pre{
+    font-size: 16px;
+    line-height: 2.5;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.8);
     text-transform: uppercase;
     text-align: justify;
-    padding: 10px;
+    /* padding: 10px; */
     font-family: 'Allerta', sans-serif;
 }
 
@@ -119,28 +136,78 @@ footer{
 }
 
 .justify{
-    text-align: justify;
-    margin: auto;
-    padding: 5px;
+    text-align: justify !important;
 }
 
-p i {
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+p{
+    margin: 0;
+}
+
+p i{
     margin-right: 0.5rem;
 }
 
+.grid-2 h3{
+    font-size: 6rem;
+}
+
+.grid-2 p{
+    font-size: 0.912rem;
+    line-height: 1.7;
+}
+
+/* ------------------------------------- RESPONSIVE ---------------------------------------------- */
+
 @media screen and (max-width: 1024px){
 
-    .pre{
-        font-size: 17px;
+    #pre{
+        font-size: 15px;
         padding: 0;
+    }
+
+    .title1{
+        font-size: 4rem
+    }
+
+    .grid-2 h3{
+        font-size: 4.9rem;
+    }
+
+    .grid-2 p {
+        font-size: 0.851rem;
+        line-height: 1.6;
     }
 }
 
 @media screen and (max-width: 768px){
 
-    .pre{
+    .header-content .text{
+        width: 67%;
+        font-size: 0.77rem;
+        text-align: justify;
+    }
+
+    #pre{
         font-size: 13px;
         padding: 0;
+    }
+
+    .title1{
+        font-size: 3rem
+    }
+
+    .grid-2 p {
+        font-size: 0.776rem;
+        line-height: 1.6;
+    }
+
+    .grid-2 h3{
+        font-size: 3.7rem;
     }
 }
 
@@ -151,8 +218,7 @@ p i {
     }
 
     .header::after{
-
-        height: 90vh;
+        height: 85vh;
     }
 
     .header-content{
@@ -160,8 +226,9 @@ p i {
     }
     
     .header-content .text{
-        width: 80%;
-        font-size: 4vw;
+        width: 85%;
+        font-size: 0.73rem;
+        text-align: justify;
     }
 
     .container{
@@ -174,12 +241,29 @@ p i {
         font-size: 13px;
         padding: 0;
     }
+
+    .title1{
+        font-size: 3rem
+    }
+
+    .grid-2 p {
+        font-size: 0.7735rem;
+        line-height: 1.6;
+    }
+
+    .grid-2 h3{
+        font-size: 3.7rem;
+    }
 }
 
 @media screen and (max-width: 320px){
 
-    .pre{
-        font-size: 11px;
+    .header::after{
+        height: 86vh;
+    }
+
+    #pre{
+        font-size: 14px;
         padding: 0;
     }
 
@@ -189,5 +273,48 @@ p i {
 
     .justify{
         padding: 0px;
+    }
+
+    .title1{
+        font-size: 2.5rem
+    }
+
+    .header-content .text {
+        text-align: justify;
+        font-size: 0.76rem;
+    }
+
+    .grid-2 p {
+        font-size: 0.763rem;
+        line-height: 1.6;
+    }
+
+    .grid-2 h3{
+        font-size: 3.2rem;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 360px){ /* responsive para Galaxy S5*/
+
+    .title1{
+        font-size: 2.84rem
+    }
+
+    .header-content .text {
+        text-align: justify;
+        font-size: 0.9090rem;
+    }
+
+    .header::after{
+        height: 88vh;
+    }
+
+    .grid-2 p{
+        font-size: 0.763rem;
+        line-height: 1.6;
+    }
+
+    .grid-2 h3{
+        font-size: 3.5rem;
     }
 }

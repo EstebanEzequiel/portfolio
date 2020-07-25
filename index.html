@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title>Portfolio</title>
@@ -16,19 +18,19 @@
     <!-- encabezado -->
     <div class="header">
         <div class="header-content">
-            <div class="title">
+            <div class="title1">
             Esteban Ezequiel Ceballos
             </div>
             <br>
-            <div class="text">
-                I am an aspiring software developer with knowledge on the client side, with Angular, as on the server side, with Javascript, NodeJS, ExpressJS. I am interested in continuing to grow in the knowledge of new trend technologies in the current industry.   
+            <div class="text justify">
+                I am an aspiring software developer with knowledge of Javascript technologies, on the client side (Angular) as well as on the server side (NodeJS, ExpressJS). I am interested in continuing to grow in the knowledge of new trend technologies in the current industry.  
             </div>
         </div>
     </div>
 
     <!-- redes -->
     <div class="container text-center">
-        <div class="title">My social networks</div>
+        <div class="title">social networks</div>
         <br><br>
         <div class=" grid-3">
             <div>
@@ -53,44 +55,49 @@
                 <i class="fas fa-mail-bulk fa-5x"></i>
                 <h3>Emails</h3>
                 <div>
+                    I receive them in
+                    <br>
                     <a class="list" href="mailto:estebanezequielceballos@gmail.com" target="_blank">
                     Go to Gmail
                     </a>
-                    <!-- <a class="list" href="https://www.instagram.com/e2equle1/" target="_blank">
-                    Instagram</a><span>, </span>
-                    <a href="https://www.facebook.com/e2equle1" target="_blank">
-                    Facebook</a> -->
                 </div>
             </div>
         </div>
-        <br>
     </div>
 
     <!-- skills -->
     <div class="bg-light diagonal">
-        <div class="container recto">
-            <h3 class="title text-center">MY skills</h3>
-            <br>
+        <div class="container1 recto">
+            <h3 class="title text-center">
+                <i class="fas fa-server" style="font-size: inherit;"></i>
+                skills
+            </h3>
+            <br><br>
             <div class="grid-2">
-                <div class="flexible">
-                    <i class="fas fa-laptop-code fa-6x" style="text-align: center; padding: 20px;"></i>
-                    <i class="fas fa-code fa-3x"></i>
-                    <i class="fas fa-server fa-5x" style="text-align: center; padding-left: 150px;"></i>
-                    <i class="fas fa-database fa-6x" style="padding-left: 35px;"></i>
-                </div>
                 <div>
-                    <p class="pre">
-                    <i class="fas fa-hand-point-right fa-2x" style="vertical-align: middle;"></i>Front-End: HTML | CSS | Javascript <br>
-                    <i class="fas fa-hand-point-right fa-2x" style="vertical-align: middle;"></i>Framework: Angular <br>
-                    <i class="fas fa-hand-point-right fa-2x" style="vertical-align: middle;"></i>Styles: Bootstrap <br>
-                    <i class="fas fa-hand-point-right fa-2x" style="vertical-align: middle;"></i>Back-End: NodeJS | ExpressJS <br>
-                    <i class="fas fa-hand-point-right fa-2x" style="vertical-align: middle;"></i>POO | MVC 
+                    <p id="pre">
+                    <i class="fas fa-cogs fa-1x" style="vertical-align: middle;"></i>
+                    HTML | CSS | Javascript <br>
+                    <i class="fas fa-cogs fa-1x" style="vertical-align: middle;"></i> 
+                    Angular <br>
+                    <i class="fas fa-cogs fa-1x" style="vertical-align: middle;"></i>
+                    Bootstrap | Font Awesome<br>
+                    <i class="fas fa-cogs fa-1x" style="vertical-align: middle;"></i>
+                    NodeJS | ExpressJS <br>
+                    <i class="fas fa-cogs fa-1x" style="vertical-align: middle;"></i>POO | MVC 
                     <br>
-                    <i class="fas fa-hand-point-right fa-2x" style="vertical-align: middle;"></i>Database: MongoDB | MySQL <br>
-                    <i class="fas fa-hand-point-right fa-2x" style="vertical-align: middle;"></i>REST APIs consumption <br>
-                    <i class="fas fa-hand-point-right fa-2x" style="vertical-align: middle;"></i>Platform as a service: Firebase <br>
-                    <i class="fas fa-hand-point-right fa-2x" style="vertical-align: middle;"></i>Versioning system Git <br>
+                    <i class="fas fa-cogs fa-1x" style="vertical-align: middle;"></i>
+                    MongoDB | MySQL <br>
+                    <i class="fas fa-cogs fa-1x" style="vertical-align: middle;"></i>
+                    REST APIs<br>
+                    <i class="fas fa-cogs fa-1x" style="vertical-align: middle;"></i>
+                    Firebase (PaaS)<br>
+                    <i class="fas fa-cogs fa-1x" style="vertical-align: middle;"></i>
+                    Git <br>
                     </p>
+                </div>
+                <div class="flexible">
+                    <img src="mean.png" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -102,20 +109,21 @@
             <div>       
                 <h3 class="title">CONTACT ME</h3>
                 <br>
-                <p class="justify">
+                <p class="text justify">
                         I am currently part of the CLIP program for the training of FullStack developers in Córdoba, however you can contact me for any offer related to this profession. Thank you very much for visiting my portfolio.
                 </p>
             </div>
-            <div class="center">
+            <div class="flexible">
             <i class="fas fa-handshake fa-10x"></i>
             </div>        
         </div>
         <!-- descargar cv -->
         <div class="text text-center">
             <br><br><br>
-            <a href="https://drive.google.com/file/d/1kAZhXsfv8DxjWhCzDy34YTTEBy3CvNMD/view?usp=sharing" target="_blank" style="text-decoration: none;"> 
-                <i class="fas fa-hand-point-down fa-4x" style="vertical-align: middle; color: whitesmoke;"></i>
-                <h3 style="text-transform: uppercase;">download cv here</h3> 
+            <h3 style="text-transform: uppercase;">download cv here</h3> 
+            <i class="fas fa-hand-point-down fa-4x" style="color: whitesmoke;"></i><br><br>
+            <a href="https://drive.google.com/file/d/1HoA6sfDwnwTu7eAUJWJdv53LIom2UJZK/view?usp=sharing" target="_blank" style="text-decoration: none;"> 
+                <i class="fas fa-file-alt fa-3x"></i>
             </a>
         </div>
     </div>   
