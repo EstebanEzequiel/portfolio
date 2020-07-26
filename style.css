@@ -7,19 +7,19 @@ body{
 
 .header::after{  /* ver seudo elemento*/
     content: '';
-    height: 91vh;
+    height: 87vh;
     width: 100%;
     background-image: url(https://wallpaperstock.net/wallpapers/thumbs1/22279wide.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: block;
-    filter: blur(15px); /* efecto nublado*/
-    -webkit-filter: blur(15px);
+    filter: blur(30px); /* efecto nublado*/
+    -webkit-filter: blur(30px);
     transition: all 1000ms;
 }
 
-.header:active::after{ /* se hace nitido con cursor, luego vuelve a nublar*/
+.header:hover::after{ /* se hace nitido con cursor, luego vuelve a nublar*/
     filter: blur(0px);
     -webkit-filter: blur(0px);
 }
@@ -27,9 +27,37 @@ body{
 .header-content{
     z-index: 1;
     position: absolute;
-    top: 35%;
+    top: 33%;
     width: 100%;
-    text-align: center;
+    text-align: center;    
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-bar{
+    z-index: 1;
+    position: absolute;
+    top: 7%;
+    width: 68%;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    padding: 8px 12px;
+    margin-left: 18px;
+    border: 1px solid darkgoldenrod;
+    border-radius: 0.35rem;
+    float: right;
 }
 
 .title{
@@ -70,14 +98,14 @@ body{
     max-width: 80%;
     margin: auto;
     padding-top: 8rem;
-    padding-bottom: 6rem;
+    padding-bottom: 8rem;
 }
 
 .container1 {
     max-width: 80%;
     margin: auto;
-    padding-top: 5rem;
-    padding-bottom: 7rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 .diagonal{
@@ -120,7 +148,7 @@ a{
 }
 
 #pre{
-    font-size: 16px;
+    font-size: 18px;
     line-height: 2.5;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.8);
@@ -187,9 +215,9 @@ p i{
 @media screen and (max-width: 768px){
 
     .header-content .text{
-        width: 67%;
-        font-size: 0.77rem;
-        text-align: justify;
+        width: 70%;
+        font-size: 0.84rem;
+        text-align: center;
     }
 
     #pre{
@@ -228,7 +256,7 @@ p i{
     .header-content .text{
         width: 85%;
         font-size: 0.73rem;
-        text-align: justify;
+        text-align: center;
     }
 
     .container{
@@ -253,6 +281,10 @@ p i{
 
     .grid-2 h3{
         font-size: 3.7rem;
+    }
+
+    nav{
+        display: none;
     }
 }
 
@@ -280,7 +312,7 @@ p i{
     }
 
     .header-content .text {
-        text-align: justify;
+        text-align: center;
         font-size: 0.76rem;
     }
 
@@ -292,6 +324,10 @@ p i{
     .grid-2 h3{
         font-size: 3.2rem;
     }
+
+    nav{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 321px) and (max-width: 360px){ /* responsive para Galaxy S5*/
@@ -301,12 +337,12 @@ p i{
     }
 
     .header-content .text {
-        text-align: justify;
+        text-align: center;
         font-size: 0.9090rem;
     }
 
     .header::after{
-        height: 88vh;
+        height: 80vh;
     }
 
     .grid-2 p{
@@ -316,5 +352,9 @@ p i{
 
     .grid-2 h3{
         font-size: 3.5rem;
+    }
+
+    nav{
+        display: none;
     }
 }
