@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: rgb(0, 0, 0,0.9);
+    background-color: rgb(0, 0, 0, 0.85);
     color: whitesmoke;
     font-family: 'Open Sans', sans-serif;
 }
@@ -182,10 +182,6 @@ p i{
     margin-right: 0.5rem;
 }
 
-.grid-2 h3{
-    font-size: 2rem;
-}
-
 .grid-2 .text{
     font-size: 0.912rem;
     line-height: 1.7;
@@ -222,7 +218,7 @@ p i{
     }
 
     .grid-2 .text{
-        font-size: 0.75rem;
+        font-size: 15px;
         line-height: 1.6;
     }
 }
@@ -245,7 +241,7 @@ p i{
     }
 
     .grid-2 .text{
-        font-size: 0.7rem;
+        font-size: 13px;
         line-height: 1.6;
     }
 
@@ -256,6 +252,7 @@ p i{
 }
 
 @media screen and (max-width: 375px){
+
     .grid-3, .grid-2{
         grid-template-columns: 1fr;
     }
@@ -270,7 +267,7 @@ p i{
     
     .header-content .text{
         width: 85%;
-        font-size: 0.73rem;
+        font-size: 13px;
         text-align: center;
     }
 
@@ -280,8 +277,8 @@ p i{
         padding-bottom: 4rem;
     }
 
-    .pre{
-        font-size: 13px;
+    #pre{
+        font-size: 20px;
         padding: 0;
     }
 
@@ -290,6 +287,7 @@ p i{
     }
 
     .grid-2 .text{
+        font-size: 13px;
         line-height: 1.6;
     }
     
