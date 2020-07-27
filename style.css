@@ -55,7 +55,7 @@ nav{
     font-size: 0.68rem;
     padding: 8px 12px;
     margin-left: 18px;
-    border: 1px solid rgba(184, 135, 11, 0.5);
+    border: 1px solid rgba(184, 135, 11, 0.3);
     border-radius: 0.35rem;
     float: right;
 }
@@ -153,14 +153,16 @@ a{
     color: rgba(0, 0, 0, 0.8);
     text-transform: uppercase;
     text-align: justify;
-    /* padding: 10px; */
     font-family: 'Oswald', sans-serif;
-    /* font-family: 'Allerta', sans-serif; */
 }
 
 footer{
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+footer p{
+    color: whitesmoke;
 }
 
 .justify{
@@ -253,7 +255,6 @@ p i{
     }
 }
 
-
 @media screen and (max-width: 375px){
     .grid-3, .grid-2{
         grid-template-columns: 1fr;
@@ -295,6 +296,10 @@ p i{
     nav{
         display: none;
     }
+
+    footer p{
+        font-size: 11px;
+    }
 }
 
 @media screen and (max-width: 320px){
@@ -309,7 +314,7 @@ p i{
     }
 
     footer p{
-        font-size: 14px;
+        font-size: 10px;
     }
 
     .justify{
@@ -371,5 +376,9 @@ p i{
     #pre{
         font-size: 20px;
         padding: 0;
+    }
+
+    footer p{
+        font-size: 11px;
     }
 }
