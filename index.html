@@ -15,23 +15,25 @@
 <body>
     <!-- encabezado -->
     <div class="header">
-        <nav>
-            <div class="nav-bar">
-                <a href="#contact">Contact me</a>
-                <a href="#skills">Skills</a>
-            </div>
-        </nav>
         <div class="header-content">
-            <div class="title1">
-            Esteban Ezequiel Ceballos
+            <div class="title1 text-center" style="overflow: auto;">
+                Esteban Ezequiel Ceballos
             </div>
-            <br>
-            <div class="text text-center">
-                I am an aspiring software developer with Javascript, Client Side (Angular) and Server Side (NodeJS, ExpressJS) skills. I am interested in continuing to grow in trending technologies in today's industry. 
+            <br><br>
+            <div class="text" style="overflow: auto;">
+                <img src="utn.png" class="img-fluid left" style="max-width: 5.5%; filter: invert(100%);">
+                I am a Systems student at UTN FRC. I aspire to software development, specifically in the role of MEAN Stack (MongoDB, Angular, ExpressJS, NodeJS). I am interested in continuing to grow in trending technologies in today's industry.
             </div>
         </div>
+        <nav class="nav-bar">
+            <a href="#experience">Experience</a>
+            <a href="#knowledge">knowledge</a>
+            <a href="#language">Languages</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </div>
-
+        
     <!-- redes -->
     <div class="container text-center">
         <div class="title">social networks</div>
@@ -62,48 +64,63 @@
                     I receive them in
                     <br>
                     <a class="list" href="mailto:estebanezequielceballos@gmail.com" target="_blank">
-                    Go to Gmail
+                        Go to Gmail
                     </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- skills -->
-    <div class="bg-light diagonal">
+    <!-- knowledge -->
+    <div class="bg-dark diagonal">
         <div class="container1 recto">
-            <h3 class="title text-center" id="skills" style="text-shadow: -4px 4px 3.4px rgba(128, 128, 128, 0.4);">
-                <i class="fas fa-server" style="font-size: inherit;"></i>
-                skills
-            </h3>
-            <br><br>
+            <h3 class="title text-center" id="knowledge">knowledges</h3>
+            <br>
+            <div class="text-center helvetica" style="font-size: 1.1rem;">
+                <i class="fas fa-check-circle" style="color: orange;"></i>Novice
+                <i class="fas fa-check-circle" style="color: greenyellow;"></i>Intermediate
+                <i class="fas fa-check-circle" style="color: blue;"></i>Advanced
+            </div>
+            <br>
             <div class="grid-2">
                 <div class="flexible">
-                    <img src="esquema6.png" class="img-fluid">
-                    <br>
+                    <h2><i class="fas fa-code fa-1x" style="vertical-align: auto;"></i> languages</h2>
+                    <ul>
+                        <li><i class="fas fa-check-circle" style="color: greenyellow;"></i>HTML5</li>
+                        <li><i class="fas fa-check-circle" style="color: greenyellow;"></i>CSS3</li>
+                        <li><i class="fas fa-check-circle" style="color: greenyellow;"></i>Javascript</li>
+                        <li><i class="fas fa-check-circle" style="color: orange;"></i>Python</li>
+                        <li><i class="fas fa-check-circle" style="color: orange;"></i>Java</li>
+                        <li><i class="fas fa-check-circle" style="color: orange;"></i>PHP</li>
+                    </ul>
+                    <h2><i class="fas fa-cogs fa-1x" style="vertical-align: auto;"></i> frameworks</h2>
+                    <ul>
+                        <li><i class="fas fa-check-circle" style="color: greenyellow;"></i>Angular</li>
+                        <li><i class="fas fa-check-circle" style="color: orange;"></i>ExpressJS</li>
+                        <li><i class="fas fa-check-circle" style="color: greenyellow;"></i>Bootstrap</li>
+                        <li><i class="fas fa-check-circle" style="color: greenyellow;"></i>F-Awesome</li>
+                    </ul>
+                    <h2><i class="fas fa-database fa-1x" style="vertical-align: auto;"></i> databases</h2>
+                    <ul>
+                        <li><i class="fas fa-check-circle" style="color: greenyellow;"></i>MongoDB</li>
+                        <li><i class="fas fa-check-circle" style="color: orange;"></i>MySQL</li>
+                    </ul>
                 </div>
                 <div class="flexible">
-                    <p id="pre">
-                    <i class="fas fa-cogs fa-1x" style="vertical-align: middle;"></i>
-                    HTML | CSS | Javascript <br>
-                    <i class="fas fa-cogs fa-1x" style="vertical-align: middle;"></i> 
-                    Angular <br>
-                    <i class="fas fa-cogs fa-1x" style="vertical-align: middle;"></i>
-                    Bootstrap | Font Awesome<br>
-                    <i class="fas fa-cogs fa-1x" style="vertical-align: middle;"></i>
-                    NodeJS | ExpressJS <br>
-                    <i class="fas fa-cogs fa-1x" style="vertical-align: middle;"></i>POO | MVC 
-                    <br>
-                    <i class="fas fa-cogs fa-1x" style="vertical-align: middle;"></i>
-                    MongoDB | MySQL <br>
-                    <i class="fas fa-cogs fa-1x" style="vertical-align: middle;"></i>
-                    REST APIs<br>
-                    <i class="fas fa-cogs fa-1x" style="vertical-align: middle;"></i>
-                    Firebase (PaaS)<br>
-                    <i class="fas fa-cogs fa-1x" style="vertical-align: middle;"></i>
-                    Git
-                    </p>
-                    <br>
+                    <h2><i class="fas fa-server fa-1x" style="vertical-align: auto;"></i> infrastructures</h2>
+                    <ul>
+                        <li><i class="fas fa-check-circle" style="color: orange;"></i>Firebase</li>
+                    </ul>
+                    <h2><i class="fab fa-github-alt fa-1x" style="vertical-align: auto;"></i> version control</h2>
+                    <ul>
+                        <li><i class="fas fa-check-circle" style="color: greenyellow;"></i>GIT</li>
+                        <li><i class="fas fa-check-circle" style="color: greenyellow;"></i>GitHub</li>
+                    </ul>
+                    <h2><i class="fas fa-laptop-code fa-1x" style="vertical-align: auto;"></i> operating systems</h2>
+                    <ul>
+                        <li><i class="fas fa-check-circle" style="color: blue;"></i>Windows</li>
+                        <li><i class="fas fa-check-circle" style="color: greenyellow;"></i>Linux</li>
+                    </ul>
                 </div>
             </div>
         </div>

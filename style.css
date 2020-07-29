@@ -1,15 +1,15 @@
 body{
     margin: 0;
-    background-color: rgb(0, 0, 0, 0.85);
+    background-color: rgb(0, 0, 0);
     color: whitesmoke;
     font-family: 'Open Sans', sans-serif;
 }
 
 .header::after{  /* ver seudo elemento*/
     content: '';
-    height: 87vh;
+    height: 80vh;
     width: 100%;
-    background-image: url(https://wallpaperstock.net/wallpapers/thumbs1/22279wide.jpg);
+    background-image: url(fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -27,24 +27,23 @@ body{
 .header-content{
     z-index: 1;
     position: absolute;
-    top: 33%;
+    top: 30%;
     width: 100%;
-    text-align: center;    
 }
 
 nav{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-evenly;
+    width: 60%;
 }
 
 .nav-bar{
     z-index: 1;
     position: absolute;
-    top: 7%;
-    width: 68%;
+    top: 80%;
+    left: 19.5%;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
 }
 
@@ -54,10 +53,9 @@ nav{
     text-transform: uppercase;
     font-size: 0.68rem;
     padding: 8px 12px;
-    margin-left: 18px;
-    border: 1px solid rgba(184, 135, 11, 0.3);
+    /* margin-left: 18px; */
+    border: 1px solid grey;
     border-radius: 0.35rem;
-    float: right;
 }
 
 .title{
@@ -82,10 +80,10 @@ nav{
 
 .header-content .text {
     line-height: 1.7;
-    width: 68%;
+    width: 69%;
     margin: auto;
     text-align: center;
-    font-size: 1rem;
+    font-size: 14.5px;
 }
 
 .text-center{
@@ -103,8 +101,8 @@ nav{
 .container1 {
     max-width: 80%;
     margin: auto;
-    padding-top: 4.5rem;
-    padding-bottom: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .diagonal{
@@ -132,7 +130,6 @@ nav{
 .flexible{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -141,9 +138,9 @@ a{
     line-height: 1.9;
 }
 
-.bg-light{
-    background-color: white;
-    color: #333;
+.bg-dark{
+    background-color: #303030;
+    color: whitesmoke;
 }
 
 #pre{
@@ -174,6 +171,10 @@ footer p{
     height: auto;
 }
 
+.left{
+    float: left;
+}
+
 p{
     margin: 0;
 }
@@ -202,6 +203,28 @@ p i{
 
 .grid-2 .flexible h3{
     font-size: 1rem;
+}
+
+ul{
+    margin: 0;
+    list-style: none;
+    line-height: 1.6;
+}
+
+ul li i {
+    padding-right: 10px;
+}
+
+.helvetica{
+    font-family: Helvetica, sans-serif;
+}
+
+.helvetica i{ 
+    padding-left: 15px;
+}
+
+h2{
+    margin: 20px 0 0;
 }
 
 /* ------------------------------------- RESPONSIVE ---------------------------------------------- */
